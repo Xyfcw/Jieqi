@@ -9,7 +9,9 @@ from collections import namedtuple
 import random
 from board import board, common_20210528_fixed as common, library
 from copy import deepcopy
-import readline
+# import readline
+import os
+os.system('@echo off')
 
 B = board.Board()
 piece = {'P': 44, 'N': 108, 'B': 23, 'R': 233, 'A': 23, 'C': 101, 'K': 2500}

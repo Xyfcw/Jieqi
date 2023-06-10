@@ -10,7 +10,10 @@ import random
 from board import board
 from board import common_v2_fixed as common
 from copy import deepcopy
-import readline
+import os
+# import readline
+os.system('@echo off')
+
 
 B = board.Board()
 piece = {'P': 44, 'N': 108, 'B': 23, 'R': 233, 'A': 23, 'C': 101, 'K': 2500}
@@ -753,7 +756,7 @@ def main(random_move=False, AI=True):
             print("You win!")
             break
 
-        print("Think depth: {} My move: {} (score {})".format(_depth, render(254 - move[0]) + render(254 - move[1]), score))
+        # print("Think depth: {} My move: {} (score {})".format(_depth, render(254 - move[0]) + render(254 - move[1]), score))
         pos, win, eat, dst = hist[-1].mymove_check(move)
 
         if win:

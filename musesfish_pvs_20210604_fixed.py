@@ -9,8 +9,11 @@ from collections import namedtuple
 import random
 from board import board, common_20210604_fixed as common, library
 from copy import deepcopy
-import readline
+# import readline
 import json
+import os
+os.system('@echo off')
+
 
 NULLMOVE = True
 QS = True

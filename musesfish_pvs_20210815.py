@@ -9,7 +9,7 @@ from collections import namedtuple
 import random
 from board import board, common_20210815 as common, library
 from copy import deepcopy
-import readline
+# import readline
 import json
 
 NULLMOVE = True
